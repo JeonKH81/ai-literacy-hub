@@ -1,4 +1,4 @@
-<title>60분 미니 연구 — 실습 허브</title>
+<title>아이디어 → 원페이저 — 실습 허브</title>
 <style>
 /* Apple DESIGN.md system — light-dominant, deliberately single-theme (like apple.com) */
 :root{
@@ -18,8 +18,6 @@ section{padding:80px 22px}
 @media(max-width:640px){section{padding:48px 20px}}
 .inner{max-width:680px;margin:0 auto}
 .inner-wide{max-width:820px;margin:0 auto}
-
-/* hero */
 .hero{text-align:center;padding-top:96px}
 .eyebrow{font-size:14px;font-weight:600;letter-spacing:-0.224px;color:var(--ink-48);margin:0 0 14px}
 h1{font-size:clamp(34px,7vw,56px);font-weight:600;line-height:1.07;letter-spacing:-0.02em;
@@ -33,32 +31,25 @@ h1{font-size:clamp(34px,7vw,56px);font-weight:600;line-height:1.07;letter-spacin
 .pill:focus-visible{outline:2px solid var(--blue-focus);outline-offset:2px}
 .pill.primary{background:var(--blue);color:#fff}
 .pill.ghost{background:transparent;color:var(--blue);border:1px solid var(--blue)}
-.hero .fine{margin-top:26px;font-size:14px;letter-spacing:-0.224px;color:var(--ink-48)}
-
-/* dark rule tile */
 .tile{background:var(--tile);color:var(--on-dark);text-align:center}
 .tile h2{font-size:clamp(28px,5.5vw,40px);font-weight:600;line-height:1.1;letter-spacing:-0.015em;
   margin:0 0 14px;text-wrap:balance}
 .tile p{font-size:19px;font-weight:300;line-height:1.5;letter-spacing:0;color:var(--muted-on-dark);
   margin:0 auto;max-width:520px}
 .tile a{color:var(--blue-on-dark);text-decoration:none}
-
-/* mission sections */
 .alt{background:var(--parchment)}
 .mission-head{text-align:center;margin-bottom:40px}
 .mission-kicker{font-size:14px;font-weight:600;letter-spacing:-0.224px;color:var(--blue);margin:0 0 8px}
 h2.mission{font-size:clamp(26px,5vw,34px);font-weight:600;line-height:1.2;letter-spacing:-0.015em;margin:0 0 10px;text-wrap:balance}
 .mission-goal{font-size:17px;color:var(--ink-48);margin:0 auto;max-width:540px}
-
-/* prompt cards — store-utility-card grammar */
 .card{background:var(--canvas);border:1px solid var(--hairline);border-radius:18px;
   padding:24px;margin:0 0 20px}
-.alt .card{border-color:var(--hairline)}
 .card-label{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:0 0 10px}
 .card-label b{font-size:14px;font-weight:600;letter-spacing:-0.224px}
 .card-label .warn{font-size:12px;font-weight:400;letter-spacing:-0.12px;color:var(--ink-48)}
 .prompt{font-size:17px;line-height:1.47;letter-spacing:-0.374px;word-break:keep-all;color:var(--ink-80);
-  margin:0 0 16px;white-space:pre-wrap;word-break:keep-all;overflow-wrap:break-word}
+  margin:0 0 16px;white-space:pre-wrap;overflow-wrap:break-word}
+.prompt.tmpl{font-size:15px;line-height:1.55}
 .copy{display:inline-block;padding:8px 18px;border-radius:9999px;border:0;cursor:pointer;
   background:var(--blue);color:#fff;font-size:14px;font-weight:400;letter-spacing:-0.224px;
   font-family:inherit;transition:transform .12s ease}
@@ -67,8 +58,6 @@ h2.mission{font-size:clamp(26px,5vw,34px);font-weight:600;line-height:1.2;letter
 .copy.done{background:var(--ink);color:#fff}
 .judge{font-size:14px;line-height:1.6;letter-spacing:-0.224px;color:var(--ink-48);text-align:center;margin:6px 0 0}
 .judge b{color:var(--ink)}
-
-/* codebook table */
 .tblwrap{overflow-x:auto;background:var(--canvas);border:1px solid var(--hairline);border-radius:18px}
 table{border-collapse:collapse;width:100%;font-size:14px;letter-spacing:-0.224px}
 th,td{padding:12px 18px;border-bottom:1px solid var(--divider);text-align:left;vertical-align:top}
@@ -76,8 +65,6 @@ th{font-weight:600;color:var(--ink-48);font-size:12px;letter-spacing:-0.12px}
 tr:last-child td{border-bottom:none}
 td code{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:13px;color:var(--blue);letter-spacing:0}
 .tbl-note{font-size:12px;letter-spacing:-0.12px;color:var(--ink-48);text-align:center;margin:14px 0 0}
-
-/* rules — dark tile with list */
 .tile-rules{background:var(--tile2);color:var(--on-dark)}
 .tile-rules h2{text-align:center}
 ol.rules{margin:36px auto 0;padding:0;max-width:600px;list-style:none;counter-reset:r}
@@ -88,8 +75,6 @@ ol.rules li::before{content:counter(r,decimal-leading-zero);font-size:14px;font-
   color:var(--blue-on-dark);font-variant-numeric:tabular-nums;letter-spacing:0;flex:0 0 2em}
 ol.rules b{font-weight:600;color:var(--on-dark)}
 ol.rules span{display:block;font-size:14px;font-weight:300;letter-spacing:-0.1px;color:var(--muted-on-dark);margin-top:2px}
-
-/* footer */
 footer{background:var(--parchment);padding:56px 22px;text-align:center}
 footer p{font-size:12px;line-height:1.6;letter-spacing:-0.12px;color:var(--ink-48);margin:4px 0}
 @media(prefers-reduced-motion:reduce){.pill,.copy{transition:none}}
@@ -97,12 +82,12 @@ footer p{font-size:12px;line-height:1.6;letter-spacing:-0.12px;color:var(--ink-4
 
 <section class="hero">
   <div class="inner">
-    <p class="eyebrow">AI Literacy · Physician-Scientist Seminar</p>
-    <h1>60분, 미니 연구 한 편.</h1>
-    <p class="lead">질문에서 초록까지 — AI와 함께 연구의 전 과정을 오늘 완주합니다.</p>
+    <p class="eyebrow">AI Literacy · Physician-Scientist Seminar · AI Hands-on 2</p>
+    <h1>아이디어에서 원페이저까지.</h1>
+    <p class="lead">오전에 도출한 나만의 연구 아이디어를 60분 안에 연구주제로 다듬어 한 장으로 완성합니다.</p>
     <div class="cta-row">
-      <a class="pill primary" href="medstudent_sleep.csv" download>데이터셋 받기</a>
-      <a class="pill ghost" href="#codebook">코드북 보기</a>
+      <a class="pill primary" href="#m1">미션 시작하기</a>
+      <a class="pill ghost" href="#onepager">원페이저 템플릿</a>
     </div>
   </div>
 </section>
@@ -114,21 +99,16 @@ footer p{font-size:12px;line-height:1.6;letter-spacing:-0.12px;color:var(--ink-4
   </div>
 </section>
 
-<section>
+<section id="m1">
   <div class="inner">
     <div class="mission-head">
       <p class="mission-kicker">M1 · 10분</p>
-      <h2 class="mission">연구질문 만들기</h2>
-      <p class="mission-goal">코드북을 보고 AI와 브레인스토밍한 뒤, 하나를 골라 PICO(E)로 다듬습니다.</p>
+      <h2 class="mission">아이디어 구조화</h2>
+      <p class="mission-goal">오전에 정리한 아이디어를 검정 가능한 연구질문(PICO)과 디자인 후보로 바꿉니다.</p>
     </div>
     <div class="card">
-      <div class="card-label"><b>M1-A · 질문 브레인스토밍</b></div>
-      <p class="prompt">나는 의대생이고 연구를 처음 배운다. 다음 코드북을 가진 단면연구 설문 데이터(N=200)가 있다: [코드북 표를 복사해 붙여넣기]. 이 데이터로 검정 가능한 연구질문 3개를 제안하라. 각 질문에 대해 (1) 어떤 변수를 쓰는지 (2) 어떤 분석이 필요한지 (3) 예상되는 한계 1개를 함께 제시하라.</p>
-      <button class="copy">복사</button>
-    </div>
-    <div class="card">
-      <div class="card-label"><b>M1-B · PICO로 다듬기</b></div>
-      <p class="prompt">다음 연구질문을 PICO(E) 형식으로 구조화하라: [우리 팀 질문]. P(대상), E(노출/요인), C(비교군), O(결과변수)를 명시하고, 이 데이터(단면연구)로 답할 수 있는 형태로 문장을 다듬어라. 인과관계 표현은 피하라.</p>
+      <div class="card-label"><b>M1-A · 아이디어 → 연구질문</b></div>
+      <p class="prompt">다음은 내 연구 아이디어다: [오전에 정리한 아이디어 붙여넣기]. 나는 연구를 처음 배우는 의대생이다. 이 아이디어를 (1) 한 문장 연구질문 (2) PICO(E) — P 대상, I/E 중재·노출, C 비교, O 결과 (3) 적합한 연구 디자인 후보 2개(각각의 장단점 포함)로 구조화하라. 인과 표현은 신중히 사용하라.</p>
       <button class="copy">복사</button>
     </div>
   </div>
@@ -137,79 +117,88 @@ footer p{font-size:12px;line-height:1.6;letter-spacing:-0.12px;color:var(--ink-4
 <section class="alt">
   <div class="inner">
     <div class="mission-head">
-      <p class="mission-kicker">M2 · 10분</p>
-      <h2 class="mission">선행문헌, 그리고 환각</h2>
-      <p class="mission-goal">AI가 준 참고문헌 5개를 PubMed에서 하나씩 직접 검증하고, 팀 환각률을 기록합니다.</p>
+      <p class="mission-kicker">M2 · 15분</p>
+      <h2 class="mission">고도화 — 아이디어를 두들겨 보기</h2>
+      <p class="mission-goal">Novelty를 확인하고, 심사위원의 눈으로 약점을 찾고, 필요한 데이터를 정의합니다.</p>
     </div>
     <div class="card">
-      <div class="card-label"><b>M2-A · 문헌 요청</b><span class="warn">웹검색은 끄고 — 환각을 관찰하는 실험입니다</span></div>
-      <p class="prompt">[우리 팀 연구질문]에 대한 선행연구 논문 5개를 알려줘. 각 논문의 제목, 저자, 연도, 저널, 핵심 결과를 알려줘.</p>
+      <div class="card-label"><b>M2-A · Novelty 확인</b><span class="warn">웹검색을 켜고 — 받은 논문은 PubMed에서 실재 확인</span></div>
+      <p class="prompt">이 연구질문과 유사한 기존 발표 논문을 검색해 PMID 또는 DOI와 함께 3개만 제시하라. 각 논문에 대해 내 아이디어와의 차이점을 표로 정리하고, 내 연구의 novelty가 무엇인지 한 문장으로 요약하라. 확실하지 않은 논문은 제시하지 마라.</p>
       <button class="copy">복사</button>
     </div>
     <div class="card">
-      <div class="card-label"><b>M2-B · 올바른 방법</b><span class="warn">이번엔 웹검색을 켜고</span></div>
-      <p class="prompt">[우리 팀 연구질문]에 대한 실제 발표 논문을 검색해 PMID 또는 DOI와 함께 2개만 제시하라. 확실하지 않으면 모른다고 답하라.</p>
+      <div class="card-label"><b>M2-B · 적대적 FINER 검토</b></div>
+      <p class="prompt">심사위원 입장에서 내 연구 아이디어를 FINER 기준(Feasible, Interesting, Novel, Ethical, Relevant)으로 비판하라. 각 항목에 1~5점을 매기고 근거를 제시하라. 가장 치명적인 약점 2개를 지적하고, 각각에 대한 현실적인 보완 방안을 제안하라. 듣기 좋은 말은 필요 없다.</p>
       <button class="copy">복사</button>
     </div>
-    <p class="judge"><b>○ 실재</b> 제목·저자·연도 일치 &nbsp;·&nbsp; <b>△ 오귀속</b> PMID는 실재하나 다른 논문 &nbsp;·&nbsp; <b>× 가짜</b> 존재하지 않음</p>
+    <div class="card">
+      <div class="card-label"><b>M2-C · 필요한 데이터 정의</b></div>
+      <p class="prompt">이 연구질문에 답하려면 어떤 데이터가 필요한가? (1) 연구 대상과 대략적 표본 규모 (2) 필수 변수 목록 — 중재·노출, 결과, 주요 교란변수 (3) 학생·전공의 입장에서 현실적으로 접근 가능한 데이터 소스 후보(병원 EMR, 공공 데이터베이스, 레지스트리, 설문 등)와 각각의 난이도를 제시하라.</p>
+      <button class="copy">복사</button>
+    </div>
+    <p class="judge"><b>△ 오귀속 주의</b> — PMID·저널은 실재해도 다른 논문을 가리킬 수 있습니다. 제목·저자까지 대조하세요.</p>
   </div>
 </section>
 
 <section>
   <div class="inner">
     <div class="mission-head">
-      <p class="mission-kicker">M3 · 15분</p>
-      <h2 class="mission">데이터 분석</h2>
-      <p class="mission-goal">순서를 지킵니다 — 업로드, 계획, 승인, 실행, 그리고 스팟체크.</p>
+      <p class="mission-kicker">M3 · 10분</p>
+      <h2 class="mission">데이터 맛보기</h2>
+      <p class="mission-goal">샘플 데이터로 "계획 먼저" 분석 사이클을 한 번 체험합니다 — 내 연구라면 어떤 분석일지 감 잡기.</p>
     </div>
     <div class="card">
-      <div class="card-label"><b>M3-A · 분석 계획 먼저</b></div>
-      <p class="prompt">첨부한 CSV는 의대생 200명의 생활습관·성적 단면연구 데이터다. 바로 분석하지 말고, 먼저 (1) 각 변수의 분포 확인 방법 (2) 우리 연구질문 [질문]에 적합한 기술통계와 검정 방법 (3) 결과표 구성안을 제안하라. 내가 승인하면 실행한다.</p>
+      <div class="card-label"><b>M3-A · 분석 계획 먼저</b><span class="warn">샘플 CSV를 먼저 내려받아 첨부</span></div>
+      <p class="prompt">첨부한 CSV는 의대생 200명의 생활습관·성적 단면연구 데이터다. 바로 분석하지 말고, 먼저 (1) 각 변수의 분포 확인 방법 (2) "수면시간과 시험성적의 관련성"에 적합한 기술통계와 검정 방법 (3) 결과표 구성안을 제안하라. 내가 승인하면 실행한다.</p>
       <button class="copy">복사</button>
     </div>
     <div class="card">
       <div class="card-label"><b>M3-B · 실행 + 코드 공개</b></div>
-      <p class="prompt">좋다, 그 계획대로 실행하라. 단 (1) 사용한 코드를 모두 보여주고 (2) 각 결과 수치가 어느 계산에서 나왔는지 명시하고 (3) p-value와 함께 효과크기(평균차 또는 상관계수)와 95% 신뢰구간을 보고하라.</p>
+      <p class="prompt">좋다, 그 계획대로 실행하라. 단 (1) 사용한 코드를 모두 보여주고 (2) p-value와 함께 효과크기와 95% 신뢰구간을 보고하라.</p>
       <button class="copy">복사</button>
     </div>
-    <div class="card">
-      <div class="card-label"><b>M3-C · 스팟체크</b><span class="warn">AI를 믿지 말고 확인하라</span></div>
-      <p class="prompt">여학생(sex=F)의 sleep_hours 평균을 소수점 둘째 자리까지 다시 계산해서, 계산 과정과 함께 보여줘.</p>
-      <button class="copy">복사</button>
-    </div>
-    <div class="card">
-      <div class="card-label"><b>M3-D · 심화 — 교란 보정</b><span class="warn">빠른 팀만</span></div>
-      <p class="prompt">caffeine_cups와 exam_score의 관계를 분석하고, 그 다음 sleep_hours를 보정(다중회귀)했을 때 결과가 어떻게 달라지는지 비교하라. 달라졌다면 그 이유를 교란(confounding) 관점에서 설명하라.</p>
-      <button class="copy">복사</button>
-    </div>
+    <p class="judge">샘플 데이터: <a href="medstudent_sleep.csv" download style="color:var(--blue);text-decoration:none"><b>medstudent_sleep.csv 내려받기</b></a> &nbsp;·&nbsp; 변수 설명은 <a href="#codebook" style="color:var(--blue);text-decoration:none"><b>코드북</b></a> 참조</p>
   </div>
 </section>
 
-<section class="alt">
+<section class="alt" id="onepager">
   <div class="inner">
     <div class="mission-head">
-      <p class="mission-kicker">M4 · 10분</p>
-      <h2 class="mission">초록, 그리고 팩트체크</h2>
-      <p class="mission-goal">단면연구입니다 — 인과 표현 없이, 실제 수치로만 씁니다.</p>
+      <p class="mission-kicker">M4 · 20분</p>
+      <h2 class="mission">원페이저 작성 + 팩트체크</h2>
+      <p class="mission-goal">이 한 장이 첨삭본이자, 16시 피칭의 대본입니다.</p>
     </div>
     <div class="card">
-      <div class="card-label"><b>M4-A · 구조화 초록</b></div>
-      <p class="prompt">위 분석 결과로 구조화 초록(배경 2문장, 방법 2문장, 결과 3문장(반드시 실제 수치 포함), 결론 2문장)을 한국어로 작성하라. 단면연구이므로 인과 표현을 쓰지 말고, 한계 1개를 결론에 포함하라.</p>
+      <div class="card-label"><b>원페이저 템플릿</b><span class="warn">M4-A 프롬프트에 붙여넣기</span></div>
+      <p class="prompt tmpl"># [가제목 — 연구질문이 드러나게]
+
+1. 배경과 Gap (3문장 이내): 무엇이 알려져 있고, 무엇이 비어 있는가
+2. 연구질문 (PICO 한 문장)
+3. 연구 설계 개요: 디자인 / 대상·규모 / 핵심 변수(중재·노출, 결과, 교란) / 분석 방법 한 줄
+4. 예상 결과와 의미 (2문장): 무엇을 알게 되며 임상적·과학적으로 왜 중요한가
+5. 한계와 대응 (2개)
+6. 핵심 참고문헌 (PubMed 검증된 2개, PMID 포함)
+7. AI 활용 명시 (1줄): 어떤 도구를 어느 단계에 썼는가</p>
+      <button class="copy">템플릿 복사</button>
+    </div>
+    <div class="card">
+      <div class="card-label"><b>M4-A · 원페이저 작성</b></div>
+      <p class="prompt">위 템플릿에 맞춰 내 연구 아이디어 원페이저를 한국어로 작성하라. 지금까지 이 대화에서 확정된 내용만 사용하고, PubMed에서 검증하지 않은 인용은 절대 넣지 마라. 전체 분량은 A4 1장을 넘지 마라. [템플릿 붙여넣기]</p>
       <button class="copy">복사</button>
     </div>
     <div class="card">
-      <div class="card-label"><b>M4-B · 적대적 검토</b></div>
-      <p class="prompt">네가 방금 쓴 초록을 심사위원 입장에서 비판하라: 수치 오류, 과대해석, 근거 없는 주장, 누락된 한계를 찾아 지적하고 수정본을 제시하라.</p>
+      <div class="card-label"><b>M4-B · 셀프 팩트체크</b></div>
+      <p class="prompt">방금 쓴 원페이저를 심사위원 입장에서 검토하라: 과대주장, 근거 없는 인용, 비현실적인 계획, 누락된 한계를 찾아 지적하고 수정본을 제시하라.</p>
       <button class="copy">복사</button>
     </div>
-    <p class="judge">M5(10분) — 한 문장 결론과 가장 놀랐던 것을 팀당 1분씩 공유합니다.</p>
+    <p class="judge">M5(5분) — 옆사람과 원페이저를 교환해 강점 1개·보완 1개를 말해주고, 피칭 첫 문장을 다듬으세요.</p>
   </div>
 </section>
 
 <section id="codebook">
   <div class="inner-wide">
     <div class="mission-head">
-      <p class="mission-kicker">Data</p>
+      <p class="mission-kicker">Data · M3용 샘플</p>
       <h2 class="mission">코드북</h2>
       <p class="mission-goal">medstudent_sleep.csv — 가상 설문 데이터(합성, N=200). 실존 인물의 데이터가 아닙니다.</p>
     </div>
@@ -224,7 +213,7 @@ footer p{font-size:12px;line-height:1.6;letter-spacing:-0.12px;color:var(--ink-4
       <tr><td><code>exercise_hours</code></td><td>운동 (시간/주)</td><td>0–7</td></tr>
       <tr><td><code>exam_score</code></td><td>최근 시험 점수 (100점)</td><td>40–100</td></tr>
     </table></div>
-    <p class="tbl-note">M1-A 프롬프트에 이 표를 복사해 붙여넣으세요.</p>
+    <p class="tbl-note"><a href="medstudent_sleep.csv" download style="color:var(--blue)">medstudent_sleep.csv 내려받기</a></p>
   </div>
 </section>
 
@@ -238,7 +227,7 @@ footer p{font-size:12px;line-height:1.6;letter-spacing:-0.12px;color:var(--ink-4
       <li><div><b>코드를 보여달라고 한다</b><span>과정이 보이지 않는 결과는 결과가 아니다.</span></div></li>
       <li><div><b>재료를 주고 묻는다</b><span>PDF·데이터를 먼저 주면 품질이 결정된다.</span></div></li>
       <li><div><b>긴 대화는 리셋한다</b><span>작업 단위로 새 대화 — context rot.</span></div></li>
-      <li><div><b>단면연구에 인과 표현을 쓰지 않는다</b><span>AI의 "improves"는 사람이 막는다.</span></div></li>
+      <li><div><b>관찰연구에 인과 표현을 쓰지 않는다</b><span>AI의 "improves"는 사람이 막는다.</span></div></li>
       <li><div><b>개인정보는 넣지 않는다</b><span>식별정보 제거는 사람의 책임이다.</span></div></li>
       <li><div><b>AI 사용을 밝힌다</b><span>어떤 도구를 어디에 썼는지 기록·공개(ICMJE).</span></div></li>
       <li><div><b>최종 책임은 사람에게 있다</b><span>AI는 공저자가 될 수 없다.</span></div></li>
@@ -247,7 +236,7 @@ footer p{font-size:12px;line-height:1.6;letter-spacing:-0.12px;color:var(--ink-4
 </section>
 
 <footer>
-  <p>AI Literacy · 의사과학자 세미나 · 2026-08-08</p>
+  <p>AI Literacy · 의사과학자 세미나 · 2026-08-08 · AI Hands-on 2</p>
   <p>SNUBH Cardiovascular Center · Ki-Hyun Jeon, M.D. · imcardio.notion.site/ai-literacy-2026</p>
 </footer>
 
@@ -255,8 +244,9 @@ footer p{font-size:12px;line-height:1.6;letter-spacing:-0.12px;color:var(--ink-4
 document.querySelectorAll('.copy').forEach(function(btn){
   btn.addEventListener('click', function(){
     var pre = btn.parentElement.querySelector('.prompt');
+    var label = btn.textContent;
     var done = function(){ btn.classList.add('done'); btn.textContent='복사됨';
-      setTimeout(function(){btn.classList.remove('done'); btn.textContent='복사';},1500); };
+      setTimeout(function(){btn.classList.remove('done'); btn.textContent=label;},1500); };
     if (navigator.clipboard && navigator.clipboard.writeText){
       navigator.clipboard.writeText(pre.textContent).then(done);
     } else {
